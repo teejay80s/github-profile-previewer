@@ -1,13 +1,137 @@
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark body {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.container {
+  padding: 2% 4%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.sort-box,
+.search-box,
+.recent-searches,
+.sort-box {
+  margin-bottom: 16px;
+}
+
+.sort-label {
+  margin-right: 8px;
+}
+
+.recent-searches {
+  font-size: 0.875rem;
+}
+
+.history-buttons .history-button {
+  margin-right: 8px;
+  background-color: #e9ecef;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.history-button:hover {
+  background-color: #ced4da;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  display: flex;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.repo-card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.repo-card:hover {
+  background-color: #f8f9fa;
+}
+
+.repo-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.error-text {
+  color: red;
+}
+
+.loading-text {
+  font-size: 1.2rem;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.stars {
+  font-size: 1.2rem;
 }
